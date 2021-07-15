@@ -4,12 +4,12 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 
 public class DAO {//구현체
+	public Connection conn; // 연결 객체 상속 : App과 XE 연결
+	
 	private String driver = "oracle.jdbc.driver.OracleDriver";
 	private String url = "jdbc:oracle:thin:@localhost:1521:xe";
 	private String user = "hazzys";
 	private String password = "dhgPwl7#";
-
-	public Connection conn; // 연결 객체 : App과 XE 연결
 
 	public DAO() {
 		try {
