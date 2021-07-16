@@ -86,7 +86,7 @@ public class MemberServiceImpl extends DAO implements MemberService {
 	public int memberUpdate(MemberVO vo) {
 		// 데이터 수정
 		int n = 0;
-		String sql = "update member set address = ?, tel = ?,name = ? where id = ?";
+		String sql = "update member set address = ?, tel = ?, name = ? where id = ?";
 		try {
 			psmt = conn.prepareStatement(sql);
 			psmt.setString(1, vo.getAddress()); //
