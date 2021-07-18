@@ -75,7 +75,6 @@ public class MemberServiceImpl extends DAO implements MemberService {
 			psmt.setString(5, vo.getTel());
 			psmt.setInt(6, vo.getAge());
 			n = psmt.executeUpdate();
-
 		} catch (SQLException e) {
 			e.printStackTrace();
 		}
